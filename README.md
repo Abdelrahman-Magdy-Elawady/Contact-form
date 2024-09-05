@@ -35,8 +35,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL [](https://www.frontendmentor.io/solutions/-83u5Nz_NJ9)
-- Live Site URL[](https://contact-form-seven-xi.vercel.app/)
+- [Solution URL](https://www.frontendmentor.io/solutions/-83u5Nz_NJ9)
+- [Live Site URL](https://contact-form-seven-xi.vercel.app/)
 
 ## My process
 
