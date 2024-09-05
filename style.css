@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  /*------------------Colors-----------------*/
+
+  --Green-200-lighter: hsl(148, 38%, 91%);
+  --Green-600-medium: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-500-medium: hsl(186, 15%, 59%);
+  --Grey-900-darker: hsl(187, 24%, 22%);
+
+  /*------------------------------------*/
+  --font-size: 15px;
+  --font-family: "Karla";
+  --font-Weights-normal: 400;
+  --font-Weights-bold: 700;
+
+  /*---------------------------------*/
+  --common-inputs-height: calc(2vh + 1rem);
+  --common-inputs-gap: 1rem;
+  --common-inputs-border-raduis: 0.5rem;
+  scroll-behavior: smooth;
+  /*
+Thanks for completing the form. We'll be in touch soon!*/
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family), sans-serif;
+  font-size: var(--font-size);
+  font-weight: var(--font-Weights-normal);
+  background-color: var(--Green-200-lighter);
+}
+form {
+  background-color: #fff;
+  border: 1px solid;
+  width: 700px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  gap: var(--common-inputs-gap);
+  margin: 2rem;
+}
+
+#header {
+  font-weight: var(--font-Weights-bold);
+  font-size: calc(
+    24px + (36 - 24) * ((min(100vw, 1440px) - 375px) / (1440 - 375))
+  );
+}
+#names {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: var(--common-inputs-gap);
+}
+.name {
+  flex: 1 1 calc(375px / 2);
+}
+.name > input {
+  width: 100%;
+  min-height: var(--common-inputs-height);
+  border-radius: var(--common-inputs-border-raduis);
+}
+
+input[type="email"] {
+  width: 100%;
+  min-height: var(--common-inputs-height);
+  border-radius: var(--common-inputs-border-raduis);
+}
+
+#radio-btns-parent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: var(--common-inputs-gap);
+}
+
+.radio {
+  flex: 1 1 calc(375px / 2);
+  border: 1px solid;
+  padding: 0.5rem;
+  min-height: var(--common-inputs-height);
+  border-radius: var(--common-inputs-border-raduis);
+}
+.checkers {
+  display: flex;
+  gap: calc(var(--common-inputs-gap) / 2);
+}
+
+#msg {
+  width: 100%;
+  min-height: calc(3 * var(--common-inputs-height));
+  resize: none;
+  border-radius: var(--common-inputs-border-raduis);
+}
+
+button {
+  min-height: var(--common-inputs-height);
+  border-radius: var(--common-inputs-border-raduis);
+  background-color: var(--Grey-900-darker);
+  color: var(--White);
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+}
+
+.headers {
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea,
+label {
+  cursor: pointer;
+}
+
+.required::after {
+  content: " *";
+  color: red;
+}
+
+:required:invalid {
+  animation: shake 0.5s linear;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25%,
+  75% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(228, 232, 237);
+}

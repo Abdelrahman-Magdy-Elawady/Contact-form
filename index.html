@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form action="#" id="contact-form" method="post">
+      <div id="header">Contact Us</div>
+      <div id="names">
+        <label for="first-name" class="name">
+          <p class="required headers">First Name</p>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            title="Name must be of characters only"
+            pattern="[a-zA-Z]+"
+            required
+            placeholder="John"
+          />
+        </label>
+        <label for="last-name" class="name">
+          <p class="required headers">Last Name</p>
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            required
+            title="Name must be of characters only"
+            pattern="[a-zA-Z]+"
+            placeholder="Doe"
+          />
+        </label>
+      </div>
+
+      <label for="email">
+        <p class="required headers">Email Address</p>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@example.com"
+          required
+          title="Please enter a valid email address"
+        />
+      </label>
+
+      <div id="radio-buttons">
+        <p class="required headers">Query type</p>
+        <div id="radio-btns-parent">
+          <label for="General-Enquiry" class="radio checkers">
+            <input
+              type="radio"
+              name="radio-btns"
+              id="General-Enquiry"
+              value="General Enquiry"
+              required
+              title="Please select a query type"
+            />
+            <span>General Enquiry</span>
+          </label>
+          <label for="Support-Request" class="radio checkers">
+            <input
+              type="radio"
+              name="radio-btns"
+              id="Support-Request"
+              required
+              title="Please select a query type"
+              value="Support Request"
+            />
+            <span>Support Request</span>
+          </label>
+        </div>
+      </div>
+      <label for="msg">
+        <p class="required headers">Message</p>
+        <textarea
+          name="msg"
+          required
+          title=" please consent to being contacted Submit Message Sent!"
+          id="msg"
+          placeholder=""
+        ></textarea>
+      </label>
+
+      <label for="check-box" class="required checkers">
+        <input type="checkbox" name="check-box" id="check-box" required />
+        <span>I consent to being contacted by the team</span>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
