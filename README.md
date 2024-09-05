@@ -35,8 +35,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-todo-app-using-react-js-and-beautiful-drag-and-drop-qcYY1oZQSy)
-- Live Site URL: [Todo App](https://todo-app-mohamedagina.vercel.app/)
+- Solution URL [](https://www.frontendmentor.io/solutions/-83u5Nz_NJ9)
+- Live Site URL []https://contact-form-seven-xi.vercel.app/)
 
 ## My process
 
@@ -49,5 +49,6 @@ Your users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@mohamedagina](https://www.frontendmentor.io/profile/mohamedagina)
-- LinkedIn - [@mohamedagina](https://www.linkedin.com/in/mohamed-agina/)
+- Frontend Mentor - [@Abdelrahman Magdy](https://www.frontendmentor.io/profile/Abdelrahman-Magdy-Elawady)
+
+- LinkedIn - [@Abdelrahman Magdy](www.linkedin.com/in/abdelrahman-magdy-el-awady)
